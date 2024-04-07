@@ -17,6 +17,7 @@ jobs:
       - uses: actions/download-artifact@v3
       - name: Rename Tool
         run: |
+          ls
           cd TIK-win
           move ./TIK-win.zip ../TIK-4-${{ github.run_number }}-win.zip
           cd ..
